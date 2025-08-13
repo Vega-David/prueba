@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prueba2</title>
+</head>
+<body>
+<form id="miFormulario">
+  <input type="text" name="nombre" placeholder="Nombre" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <textarea name="mensaje" placeholder="Mensaje"></textarea>
+  <button type="submit">Enviar</button>
+</form>
+
+<script>
+const scriptURL = "https://script.google.com/macros/s/AKfycbw1AaXFlbDYyIYFlw1YBx9yj1gvya4PaTon3mqrP8_-6sPfKrqckZvb7pENPQS7av-f/exec"; // tu URL publicada
+
+document.getElementById("miFormulario").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const formData = new FormData(this);
+  const params = new URLSearchParams(formData).toString();
+
+  fetch(`${scriptURL}?${params}`)
+    .then(res => res.json())
+    .then(res => {
+      if(res.status === "ok") {
+        alert("Datos enviados correctamente");
+        this.reset();
+      }
+    })
+    .catch(err => console.error("Error:", err));
+});
+</script>
+
+
+</body>
+</html>
