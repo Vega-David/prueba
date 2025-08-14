@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Parte 2</title>
+</head>
+<body>
+<form id="miFormulario2">
+  <input type="text" name="nombre_elemento" placeholder="Nombre del elemento" required>
+  <input type="text" name="caracteristica" placeholder="Característica" required>
+  <input type="text" name="codigo_unico" placeholder="Código Único" required>
+  <div>
+    <label>Estado del elemento:</label><br>
+    <input type="radio" id="estado_correcto" name="estado_elemento" value="Correcto estado" required>
+    <label for="estado_correcto">Correcto estado</label>
+    <input type="radio" id="estado_desgastado" name="estado_elemento" value="Desgastado/Roto">
+    <label for="estado_desgastado">Desgastado/Roto</label>
+  </div>
+  <button type="submit" id="btnSubmit">Enviar</button>
+</form>
+<!-- jsPDF y autotable CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+<button id="btnPDF" type="button">Descargar PDF</button>
+<script type="module" src="./src/form2.js"></script>
+</body>
+</html>

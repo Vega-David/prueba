@@ -1,0 +1,16 @@
+[
+  {"fecha": "2025-08-13", "descripcion": "Archivo de cambios creado. Cada cambio futuro en el proyecto será registrado aquí por GitHub Copilot."},
+  {"fecha": "2025-08-13", "descripcion": "Se separó el script del formulario en un archivo externo (form.js) y se enlazó desde el HTML."},
+  {"fecha": "2025-08-13", "descripcion": "Se modificó el formulario para pedir nombre y apellido, email, documento y cuadrilla. Ahora los datos se guardan en localStorage en vez de enviarse por fetch."},
+  {"fecha": "2025-08-13", "descripcion": "Ahora los datos del formulario se guardan en localStorage y también se envían por fetch al link original como antes."},
+  {"fecha": "2025-08-13", "descripcion": "El primer formulario ahora guarda la data bajo la clave 'formulario_parte1' en localStorage y redirecciona a otro formulario para continuar el proceso."},
+  {"fecha": "2025-08-13", "descripcion": "Se modularizó la app creando la carpeta src y separando la lógica en archivos: storage.js (módulo de almacenamiento), api.js (módulo de requests) y form1.js (lógica del primer formulario)."},
+  {"fecha": "2025-08-13", "descripcion": "Se creó form2.html y src/form2.js para el segundo formulario, que toma los datos del primer formulario desde localStorage, los une con los nuevos datos y los envía a la API. Se actualizó index.html para usar el script modularizado form1.js."},
+  {"fecha": "2025-08-14", "descripcion": "El segundo formulario ahora pide Característica, Código Único y Estado del elemento (radio: Correcto estado o Desgastado/Roto). Esta información se añade al objeto previamente guardado en localStorage y se envía junto con los datos del primer formulario."},
+  {"fecha": "2025-08-14", "descripcion": "Se agregó el campo 'Nombre del elemento' al segundo formulario. Ahora se pueden agregar varios elementos, que se muestran en una tabla, y se almacenan en un array en localStorage. El usuario puede decidir cuándo enviar todos los elementos juntos al spreadsheet. Se separó la lógica de guardado y envío."},
+  {"fecha": "2025-08-14", "descripcion": "Se agregó la funcionalidad de editar y eliminar elementos desde la tabla en el segundo formulario."},
+  {"fecha": "2025-08-14", "descripcion": "Mejora UX: al editar un elemento, el botón del formulario cambia a 'Guardar' y vuelve a 'Enviar' al finalizar la edición."},
+  {"fecha": "2025-08-14", "descripcion": "Ahora al eliminar un elemento desde la tabla se solicita confirmación al usuario para evitar eliminaciones accidentales."},
+  {"fecha": "2025-08-14", "descripcion": "Se agregó la funcionalidad de generar un PDF con el título 'Registro de (cuadrilla)', la tabla de elementos y los datos de la persona, usando jsPDF y autotable vía CDN. El PDF se guarda como 'reporte_cuadrilla_(numero)'."},
+  {"resumen": "El proyecto fue modularizado y se implementaron dos formularios conectados: el primero recopila datos personales y de cuadrilla, y el segundo permite agregar múltiples elementos con sus características, editarlos y eliminarlos antes de enviar. Los datos se almacenan en localStorage y se pueden enviar a un Google Sheet o exportar a PDF con formato profesional (título centrado, tabla de elementos y datos del usuario). Todas las acciones importantes y mejoras de experiencia de usuario, como confirmaciones y cambios dinámicos en la interfaz, fueron registradas y aplicadas."}
+]
