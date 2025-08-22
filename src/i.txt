@@ -1,0 +1,5 @@
+Quiero que en el formulario uno el "index.html" en vez de que al usuario se le pida la cuadrilla con un input y pueda cometer un error humano, puedes cambiarlo por desplegables que el primero sea "servicios" y el segundo es dinamico que tenga todas las cuadrillas que tiene dicho servicio que se haya seleccionado, toda la informacion de servicios y cuadrillas que necesites para los desplegables estan en el archivo "cuadrillas.json"
+despues de esto quiero que tambien tengas en cuenta que todos estos datos seran enviados al igual que veniamos haciendo..por medio de la api al spreedsheat de google
+puedes verificar tambien el archivo "codigo.gs" ya que es el codigo del appscript que tengo cargado,si tienes que hacerle modificaciones hazlas asi todo esto funciona
+Al spreedsheet deberia llegar
+(nombre y apellido,email,documento,servicio,cuadrilla,elemento,caracterista,codigo unico,estado y la fecha que se manda la informacion) todo en ese orden para que luego los datos sean analizados
